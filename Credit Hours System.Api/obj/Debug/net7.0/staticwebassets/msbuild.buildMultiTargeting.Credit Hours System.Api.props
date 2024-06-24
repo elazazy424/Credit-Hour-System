@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Credit Hours System.Api.props" />
+</Project>
