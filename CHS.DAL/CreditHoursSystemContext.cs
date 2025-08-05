@@ -1,4 +1,4 @@
-﻿using CHS.DAL.Entites;
+using CHS.DAL.Entites;
 using CHS.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -27,6 +27,7 @@ namespace CHS.DAL
         public DbSet<CourseGroup> CourseGroups { get; set; }
         public DbSet<Interval> Intervals{ get; set; }
         public DbSet<StudentTracker> studentTrackers{ get; set; }
+        public DbSet<Log> Logs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

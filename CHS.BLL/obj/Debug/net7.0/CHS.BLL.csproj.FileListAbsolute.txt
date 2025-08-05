@@ -1,16 +1,31 @@
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\bin\Debug\net7.0\CHS.BLL.deps.json
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\bin\Debug\net7.0\CHS.BLL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\bin\Debug\net7.0\CHS.BLL.pdb
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\bin\Debug\net7.0\CHS.DAL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\bin\Debug\net7.0\CHS.DAL.pdb
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.csproj.AssemblyReference.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.GeneratedMSBuildEditorConfig.editorconfig
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.AssemblyInfoInputs.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.AssemblyInfo.cs
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.csproj.CoreCompileInputs.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.csproj.CopyComplete
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\refint\CHS.BLL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.pdb
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\ref\CHS.BLL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.BLL\obj\Debug\net7.0\CHS.BLL.sourcelink.json
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/bin/Debug/net7.0/CHS.BLL.deps.json
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/bin/Debug/net7.0/CHS.BLL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/bin/Debug/net7.0/CHS.BLL.pdb
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/bin/Debug/net7.0/CHS.DAL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/bin/Debug/net7.0/CHS.DAL.pdb
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.AssemblyReference.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.AssemblyInfoInputs.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.AssemblyInfo.cs
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.CoreCompileInputs.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.CopyComplete
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/refint/CHS.BLL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.pdb
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/ref/CHS.BLL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.BLL/obj/Debug/net7.0/CHS.BLL.sourcelink.json
+/workspace/CHS.BLL/bin/Debug/net7.0/CHS.BLL.deps.json
+/workspace/CHS.BLL/bin/Debug/net7.0/CHS.BLL.dll
+/workspace/CHS.BLL/bin/Debug/net7.0/CHS.BLL.pdb
+/workspace/CHS.BLL/bin/Debug/net7.0/CHS.DAL.dll
+/workspace/CHS.BLL/bin/Debug/net7.0/CHS.DAL.pdb
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.AssemblyReference.cache
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.AssemblyInfoInputs.cache
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.AssemblyInfo.cs
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.CoreCompileInputs.cache
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.csproj.CopyComplete
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.dll
+/workspace/CHS.BLL/obj/Debug/net7.0/refint/CHS.BLL.dll
+/workspace/CHS.BLL/obj/Debug/net7.0/CHS.BLL.pdb
+/workspace/CHS.BLL/obj/Debug/net7.0/ref/CHS.BLL.dll

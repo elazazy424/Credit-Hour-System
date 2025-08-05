@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\CreditHoursSystem.Api.props" />
+  <Import Project="../build/CreditHoursSystem.Api.props" />
 </Project>

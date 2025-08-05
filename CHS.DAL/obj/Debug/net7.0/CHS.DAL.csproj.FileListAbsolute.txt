@@ -1,15 +1,29 @@
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\bin\Debug\net7.0\CHS.DAL.deps.json
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\bin\Debug\net7.0\CHS.DAL.runtimeconfig.json
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\bin\Debug\net7.0\CHS.DAL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\bin\Debug\net7.0\CHS.DAL.pdb
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.csproj.AssemblyReference.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.GeneratedMSBuildEditorConfig.editorconfig
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.AssemblyInfoInputs.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.AssemblyInfo.cs
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.csproj.CoreCompileInputs.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\refint\CHS.DAL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.pdb
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.genruntimeconfig.cache
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\ref\CHS.DAL.dll
-F:\Graduation_Project\Credit Hours System VS\Credit Hours System.Api\CHS.DAL\obj\Debug\net7.0\CHS.DAL.sourcelink.json
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/bin/Debug/net7.0/CHS.DAL.deps.json
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/bin/Debug/net7.0/CHS.DAL.runtimeconfig.json
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/bin/Debug/net7.0/CHS.DAL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/bin/Debug/net7.0/CHS.DAL.pdb
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.csproj.AssemblyReference.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.AssemblyInfoInputs.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.AssemblyInfo.cs
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.csproj.CoreCompileInputs.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/refint/CHS.DAL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.pdb
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.genruntimeconfig.cache
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/ref/CHS.DAL.dll
+F:/Graduation_Project/Credit Hours System VS/Credit Hours System.Api/CHS.DAL/obj/Debug/net7.0/CHS.DAL.sourcelink.json
+/workspace/CHS.DAL/bin/Debug/net7.0/CHS.DAL.deps.json
+/workspace/CHS.DAL/bin/Debug/net7.0/CHS.DAL.runtimeconfig.json
+/workspace/CHS.DAL/bin/Debug/net7.0/CHS.DAL.dll
+/workspace/CHS.DAL/bin/Debug/net7.0/CHS.DAL.pdb
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.csproj.AssemblyReference.cache
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.AssemblyInfoInputs.cache
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.AssemblyInfo.cs
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.csproj.CoreCompileInputs.cache
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.dll
+/workspace/CHS.DAL/obj/Debug/net7.0/refint/CHS.DAL.dll
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.pdb
+/workspace/CHS.DAL/obj/Debug/net7.0/CHS.DAL.genruntimeconfig.cache
+/workspace/CHS.DAL/obj/Debug/net7.0/ref/CHS.DAL.dll

@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\Credit Hours System.Api\\CreditHoursSystem.Api.csproj": {}
+    "/workspace/Credit Hours System.Api/CreditHoursSystem.Api.csproj": {}
   },
   "projects": {
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj": {
+    "/workspace/CHS.BLL/CHS.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj",
+        "projectUniqueName": "/workspace/CHS.BLL/CHS.BLL.csproj",
         "projectName": "CHS.BLL",
-        "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj",
-        "packagesPath": "C:\\Users\\Sigma\\.nuget\\packages\\",
-        "outputPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\obj\\",
+        "projectPath": "/workspace/CHS.BLL/CHS.BLL.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/workspace/CHS.BLL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sigma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj": {
-                "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj"
+              "/workspace/CHS.DAL/CHS.DAL.csproj": {
+                "projectPath": "/workspace/CHS.DAL/CHS.DAL.csproj"
               }
             }
           }
@@ -59,28 +57,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ubuntu/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj": {
+    "/workspace/CHS.DAL/CHS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj",
+        "projectUniqueName": "/workspace/CHS.DAL/CHS.DAL.csproj",
         "projectName": "CHS.DAL",
-        "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj",
-        "packagesPath": "C:\\Users\\Sigma\\.nuget\\packages\\",
-        "outputPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\obj\\",
+        "projectPath": "/workspace/CHS.DAL/CHS.DAL.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/workspace/CHS.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sigma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -134,36 +130,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ubuntu/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\Credit Hours System.Api\\CreditHoursSystem.Api.csproj": {
+    "/workspace/Credit Hours System.Api/CreditHoursSystem.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\Credit Hours System.Api\\CreditHoursSystem.Api.csproj",
+        "projectUniqueName": "/workspace/Credit Hours System.Api/CreditHoursSystem.Api.csproj",
         "projectName": "CreditHoursSystem.Api",
-        "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\Credit Hours System.Api\\CreditHoursSystem.Api.csproj",
-        "packagesPath": "C:\\Users\\Sigma\\.nuget\\packages\\",
-        "outputPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\Credit Hours System.Api\\obj\\",
+        "projectPath": "/workspace/Credit Hours System.Api/CreditHoursSystem.Api.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/workspace/Credit Hours System.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sigma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj": {
-                "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj"
+              "/workspace/CHS.BLL/CHS.BLL.csproj": {
+                "projectPath": "/workspace/CHS.BLL/CHS.BLL.csproj"
               }
             }
           }
@@ -200,6 +194,22 @@
               "target": "Package",
               "version": "[1.11.0, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -224,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/ubuntu/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
         }
       }
     }
