@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj": {}
+    "F:\\Graduation_Project\\Credit Hour System VS\\CHS.DAL\\CHS.DAL.csproj": {}
   },
   "projects": {
-    "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj": {
+    "F:\\Graduation_Project\\Credit Hour System VS\\CHS.DAL\\CHS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj",
+        "projectUniqueName": "F:\\Graduation_Project\\Credit Hour System VS\\CHS.DAL\\CHS.DAL.csproj",
         "projectName": "CHS.DAL",
-        "projectPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\CHS.DAL.csproj",
+        "projectPath": "F:\\Graduation_Project\\Credit Hour System VS\\CHS.DAL\\CHS.DAL.csproj",
         "packagesPath": "C:\\Users\\Sigma\\.nuget\\packages\\",
-        "outputPath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.DAL\\obj\\",
+        "outputPath": "F:\\Graduation_Project\\Credit Hour System VS\\CHS.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sigma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

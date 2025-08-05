@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CreditHoursSystem.Api.props" />
+</Project>

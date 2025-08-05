@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CHS.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+744fd69d879c5a07f8d2b8f7afd5ca8dc892494e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc6d2c7bd86cce1d07f60edeb3d11b73bd6676f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CHS.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CHS.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

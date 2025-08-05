@@ -1,0 +1,854 @@
+[
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "GetCurrentUserId",
+    "RelativePath": "api/Account/currentUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "CheckEmailExistsAsync",
+    "RelativePath": "api/Account/emailExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/Account/forgetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forgetPasswordDto",
+        "Type": "Credit_Hours_System.Api.Dtos.ForgetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Credit_Hours_System.Api.Dtos.loginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Credit_Hours_System.Api.Dtos.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPasswordDto",
+        "Type": "Credit_Hours_System.Api.Dtos.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.AccountController",
+    "Method": "SignOut",
+    "RelativePath": "api/Account/signout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.ChatBotController",
+    "Method": "SendMessage",
+    "RelativePath": "api/ChatBot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatMessage",
+        "Type": "Credit_Hours_System.Api.Controllers.ChatMessage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetAbsences",
+    "RelativePath": "api/Instructor/GetAbsences",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.AbsenceDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetEvaluationSheet",
+    "RelativePath": "api/Instructor/GetEvaluationSheet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.EvaluateDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetGroups",
+    "RelativePath": "api/Instructor/GetGroups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.InstructorDtos.CourseGroupDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetInstructorCourses",
+    "RelativePath": "api/Instructor/GetInstructorCourses/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.InstructorDtos.CourseCodeAndCourseNameDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetInstructorTimeTable",
+    "RelativePath": "api/Instructor/GetInstructorTimeTable/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.TimeTableDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetSemesters",
+    "RelativePath": "api/Instructor/GetSemesters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.InstructorDtos.SemesterTitlesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "GetStudentsInCourseGroup",
+    "RelativePath": "api/Instructor/GetStudentsInCourseGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Credit_Hours_System.Api.Dtos.InstructorDtos.StudentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "Grades",
+    "RelativePath": "api/Instructor/Grades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.EvaluateDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "PostAbsences",
+    "RelativePath": "api/Instructor/PostAbsences",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "absencePostDtos",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CHS.BLL.InstructorDtos.AbsencePostDto, CHS.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.AbsencePostDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.InstructorController",
+    "Method": "PostGrades",
+    "RelativePath": "api/Instructor/PostGrades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evaluatePostDtos",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CHS.BLL.InstructorDtos.EvaluatePostDto, CHS.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "group",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.InstructorDtos.EvaluatePostDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.RolesController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "Microsoft.AspNetCore.Identity.IdentityRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.RolesController",
+    "Method": "AddRole",
+    "RelativePath": "api/Roles/AddRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Credit_Hours_System.Api.Dtos.RolesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.RolesController",
+    "Method": "GetRoles",
+    "RelativePath": "api/Roles/GetRules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.RolesController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Roles/UpdateRole",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "role",
+        "Type": "Microsoft.AspNetCore.Identity.IdentityRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "EnrollInCourse",
+    "RelativePath": "api/Student/EnrollInCourse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollmentRequest",
+        "Type": "CHS.BLL.StudentDtos.EnrollmentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetCourseDataForReEnrollement",
+    "RelativePath": "api/Student/GetCourseDataForReEnrollement/{courseCode}/{semesterTitle}/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.CourseDataDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetCoursesBySemesterTitle",
+    "RelativePath": "api/Student/GetCoursesBySemesterTitle/{semesterTitle}/{stuId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "stuId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.CourseDataDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetEnrolledCourses",
+    "RelativePath": "api/Student/GetEnrolledCourses/{studentId}/{semesterTitle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.EnrolledCoursesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetStudentFinishedCoursesAndUnfinishedCourses",
+    "RelativePath": "api/Student/GetStudentFinishedCoursesAndUnfinishedCourses/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.StudentFinishedCoursesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetStudentResults",
+    "RelativePath": "api/Student/GetStudentResults/{studentId}/{semesterTitle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.StudentResultsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetStudentTimeTable",
+    "RelativePath": "api/Student/GetStudentTimeTable/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.TimeTableStudentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "GetStudentTracker",
+    "RelativePath": "api/Student/GetStudentTracker/{studentId}/{semesterTitle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CHS.BLL.StudentDtos.StudentTrackerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "ReEnrollInCourse",
+    "RelativePath": "api/Student/ReEnrollInCourse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollmentRequestDto",
+        "Type": "CHS.BLL.StudentDtos.EnrollmentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Credit_Hours_System.Api.Controllers.StudentController",
+    "Method": "WithdrawCourse",
+    "RelativePath": "api/Student/WithdrawCourse/{studentId}/{courseCode}/{semesterTitle}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "semesterTitle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

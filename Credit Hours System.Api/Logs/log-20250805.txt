@@ -1,0 +1,50 @@
+2025-08-05 14:56:44.133 +03:00 [INF] Starting Credit Hours System API
+2025-08-05 14:56:45.395 +03:00 [INF] Credit Hours System API started successfully
+2025-08-05 14:56:45.457 +03:00 [INF] User profile is available. Using 'C:\Users\Sigma\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 14:56:45.944 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/swagger/index.html - -
+2025-08-05 14:56:46.095 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-05 14:56:46.095 +03:00 [INF] Hosting environment: Development
+2025-08-05 14:56:46.096 +03:00 [INF] Content root path: F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api
+2025-08-05 14:56:47.666 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 222.7723ms
+2025-08-05 14:56:47.682 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/swagger/index.html - - - 200 - text/html;charset=utf-8 1744.3939ms
+2025-08-05 14:56:47.709 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/_framework/aspnetcore-browser-refresh.js - -
+2025-08-05 14:56:47.716 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/_framework/aspnetcore-browser-refresh.js - - - 200 13778 application/javascript;+charset=utf-8 6.5066ms
+2025-08-05 14:56:47.731 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/_vs/browserLink - -
+2025-08-05 14:56:48.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 359.4510ms
+2025-08-05 14:56:48.165 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/swagger/v1/swagger.json - -
+2025-08-05 14:56:48.462 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 295.2806ms
+2025-08-05 14:56:48.465 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 299.9950ms
+2025-08-05 14:56:52.147 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/api/Instructor/GetSemesters - -
+2025-08-05 14:56:54.415 +03:00 [INF] Executing endpoint 'Credit_Hours_System.Api.Controllers.InstructorController.GetSemesters (CreditHoursSystem.Api)'
+2025-08-05 14:56:54.465 +03:00 [INF] Route matched with {action = "GetSemesters", controller = "Instructor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Credit_Hours_System.Api.Dtos.InstructorDtos.SemesterTitlesDto]] GetSemesters() on controller Credit_Hours_System.Api.Controllers.InstructorController (CreditHoursSystem.Api).
+2025-08-05 14:57:00.264 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SemesterTitle], [s].[EndDate], [s].[StartDate]
+FROM [Semesters] AS [s]
+2025-08-05 14:57:00.455 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[CHS.DAL.Entites.Semester, CHS.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Credit_Hours_System.Api.Dtos.InstructorDtos.SemesterTitlesDto, CreditHoursSystem.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 14:57:00.471 +03:00 [INF] Executed action Credit_Hours_System.Api.Controllers.InstructorController.GetSemesters (CreditHoursSystem.Api) in 5996.4665ms
+2025-08-05 14:57:00.473 +03:00 [INF] Executed endpoint 'Credit_Hours_System.Api.Controllers.InstructorController.GetSemesters (CreditHoursSystem.Api)'
+2025-08-05 14:57:01.151 +03:00 [INF] Executed DbCommand (221ms) [Parameters=[@p0='?' (Size = 64), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 128), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 512), @p10='?' (Size = 4000), @p11='?' (DbType = DateTimeOffset), @p12='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Logs] ([ClientIp], [ElapsedMilliseconds], [Exception], [Level], [LogEvent], [Message], [MessageTemplate], [Properties], [RequestBody], [RequestPath], [ResponseBody], [TimeStamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2025-08-05 14:57:01.224 +03:00 [INF] HTTP GET /api/Instructor/GetSemesters responded 200 in 9073.3712ms
+2025-08-05 14:57:01.233 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/api/Instructor/GetSemesters - - - 200 - application/json;+charset=utf-8 9086.4233ms
+2025-08-05 14:57:19.421 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:14544/api/Instructor/GetGroups - -
+2025-08-05 14:57:19.441 +03:00 [INF] Executing endpoint 'Credit_Hours_System.Api.Controllers.InstructorController.GetGroups (CreditHoursSystem.Api)'
+2025-08-05 14:57:19.451 +03:00 [INF] Route matched with {action = "GetGroups", controller = "Instructor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Credit_Hours_System.Api.Dtos.InstructorDtos.CourseGroupDto]] GetGroups() on controller Credit_Hours_System.Api.Controllers.InstructorController (CreditHoursSystem.Api).
+2025-08-05 14:57:19.720 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT DISTINCT [c].[Group]
+FROM [CourseGroups] AS [c]
+2025-08-05 14:57:19.723 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Credit_Hours_System.Api.Dtos.InstructorDtos.CourseGroupDto, CreditHoursSystem.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-05 14:57:19.728 +03:00 [INF] Executed action Credit_Hours_System.Api.Controllers.InstructorController.GetGroups (CreditHoursSystem.Api) in 276.1184ms
+2025-08-05 14:57:19.728 +03:00 [INF] Executed endpoint 'Credit_Hours_System.Api.Controllers.InstructorController.GetGroups (CreditHoursSystem.Api)'
+2025-08-05 14:57:19.744 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 64), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 128), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 512), @p10='?' (Size = 4000), @p11='?' (DbType = DateTimeOffset), @p12='?' (Size = 128)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Logs] ([ClientIp], [ElapsedMilliseconds], [Exception], [Level], [LogEvent], [Message], [MessageTemplate], [Properties], [RequestBody], [RequestPath], [ResponseBody], [TimeStamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2025-08-05 14:57:19.748 +03:00 [INF] HTTP GET /api/Instructor/GetGroups responded 200 in 313.4182ms
+2025-08-05 14:57:19.749 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:14544/api/Instructor/GetGroups - - - 200 - application/json;+charset=utf-8 327.7147ms

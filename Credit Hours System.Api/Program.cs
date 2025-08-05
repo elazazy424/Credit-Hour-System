@@ -2,9 +2,14 @@ using CHS.BLL.Interfaces;
 using CHS.BLL.Repositories;
 using CHS.BLL.Services;
 using CHS.DAL;
+using CHS.DAL.Entites;
 using CHS.DAL.Identity;
 using Credit_Hours_System.Api.Extenstions;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Events;
+using Log = Serilog.Log;
+
 namespace Credit_Hours_System.Api
 {
     public class Program
@@ -13,59 +18,100 @@ namespace Credit_Hours_System.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Configure Serilog (Console Only)
+            Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .WriteTo.Console()
+            .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            builder.Services.AddDbContext<CreditHoursSystemContext>(options =>
+            try
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+                Log.Information("Starting Credit Hours System API");
 
-            builder.Services.AddDbContext<CreditHoursSystemIdentityDbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
-            });
+                builder.Host.UseSerilog();
 
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
-            builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+                builder.Services.AddControllers();
+                builder.Services.AddEndpointsApiExplorer();
+                builder.Services.AddSwaggerGen();
 
-            builder.Services.AddIdentityServices(builder.Configuration);
+                // DB contexts
+                builder.Services.AddDbContext<CreditHoursSystemContext>(options =>
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            //add token service
-            builder.Services.AddScoped<ITokenService, TokenService>();
+                builder.Services.AddDbContext<CreditHoursSystemIdentityDbContext>(options =>
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")));
 
-            var app = builder.Build();
+                // DI registrations
+                builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+                builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
+                builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+                builder.Services.AddIdentityServices(builder.Configuration);
+                builder.Services.AddScoped<ITokenService, TokenService>();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+                var app = builder.Build();
+
+                // Serilog request logging (for console/debugging)
+                app.UseSerilogRequestLogging(options =>
+                {
+                    options.MessageTemplate = "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000}ms";
+                    options.GetLevel = (httpContext, elapsed, ex) =>
+                        ex != null
+                            ? LogEventLevel.Error
+                            : httpContext.Response.StatusCode > 499
+                                ? LogEventLevel.Error
+                                : LogEventLevel.Information;
+
+                    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                    {
+                        diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                        diagnosticContext.Set("RemoteIP", httpContext.Connection.RemoteIpAddress);
+                        diagnosticContext.Set("UserAgent", httpContext.Request.Headers["User-Agent"].FirstOrDefault());
+
+                        if (httpContext.User?.Identity?.IsAuthenticated == true)
+                        {
+                            diagnosticContext.Set("UserId", httpContext.User.FindFirst("sub")?.Value ?? httpContext.User.Identity.Name);
+                        }
+                    };
+                });
+
+                // Middleware & API pipeline
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CreditHours API V1");
+                    c.RoutePrefix = "swagger";
+                });
+
+                app.UseStaticFiles();
+
+                app.UseCors(options =>
+                {
+                    options.AllowAnyOrigin();
+                    options.AllowAnyMethod();
+                    options.AllowAnyHeader();
+                });
+
+                //  Custom middleware that logs via EF
+                app.UseMiddleware<RequestResponseLoggingMiddleware>();
+
+                app.UseAuthentication();
+                app.UseAuthorization();
+
+                app.MapControllers();
+
+                Log.Information("Credit Hours System API started successfully");
+                app.Run();
             }
-            //use static files
-            app.UseStaticFiles();
-
-            //use cors
-            app.UseCors(options =>
+            catch (Exception ex)
             {
-                options.AllowAnyOrigin();
-                options.AllowAnyMethod();
-                options.AllowAnyHeader();
-            });
-
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-
-            app.Run();
+                Log.Fatal(ex, "Application terminated unexpectedly");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
     }
 }

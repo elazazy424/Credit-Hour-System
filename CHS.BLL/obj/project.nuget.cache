@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GI9v1osBGnP144AmBXmBVTRoRuZ171wuAauPRj9dIPwY6ee5w66tvctiE+E1UI4JWouhbWS6bMVCK3dywFWHSg==",
+  "dgSpecHash": "90UjWwKtlYQ=",
   "success": true,
-  "projectFilePath": "F:\\Graduation_Project\\Credit Hours System VS\\Credit Hours System.Api\\CHS.BLL\\CHS.BLL.csproj",
+  "projectFilePath": "F:\\Graduation_Project\\Credit Hour System VS\\CHS.BLL\\CHS.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sigma\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Sigma\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
