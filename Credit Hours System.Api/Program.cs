@@ -9,6 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 using Log = Serilog.Log;
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.ModelBuilder;
+using Microsoft.AspNetCore.Server.IIS;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace Credit_Hours_System.Api
 {
@@ -17,6 +21,11 @@ namespace Credit_Hours_System.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // OData model builder
+            var odataBuilder = new ODataConventionModelBuilder();
+            odataBuilder.EntityType<CHS.DAL.Entites.Log>().HasKey(l => l.Id);
+            odataBuilder.EntitySet<CHS.DAL.Entites.Log>("Logs");
 
             // Configure Serilog (Console Only)
             Log.Logger = new LoggerConfiguration()
@@ -31,7 +40,27 @@ namespace Credit_Hours_System.Api
 
                 builder.Host.UseSerilog();
 
-                builder.Services.AddControllers();
+                // Add services to the container FOR ODATA
+                builder.Services.AddControllers()
+                 .AddOData(options =>
+                 {
+                     options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(1000)
+                            .AddRouteComponents("odata", odataBuilder.GetEdmModel())
+                            .TimeZone = TimeZoneInfo.Utc;
+                 });
+
+                // Configure HTTP timeout
+                builder.Services.Configure<IISServerOptions>(options =>
+                {
+                    options.MaxRequestBodySize = int.MaxValue;
+                });
+
+                builder.Services.Configure<KestrelServerOptions>(options =>
+                {
+                    options.Limits.MaxRequestBodySize = int.MaxValue;
+                    options.Limits.RequestHeadersTimeout = TimeSpan.FromMinutes(10);
+                    options.Limits.KeepAliveTimeout = TimeSpan.FromMinutes(10);
+                });
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen();
 
@@ -48,8 +77,12 @@ namespace Credit_Hours_System.Api
                 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
                 builder.Services.AddIdentityServices(builder.Configuration);
                 builder.Services.AddScoped<ITokenService, TokenService>();
+                builder.Services.AddScoped<ILogsRepository, LogsRepository>();
 
                 var app = builder.Build();
+
+                // Enable OData route debugging (uncomment for debugging)
+                // app.UseODataRouteDebug();
 
                 // Serilog request logging (for console/debugging)
                 app.UseSerilogRequestLogging(options =>
