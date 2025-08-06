@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 using Log = Serilog.Log;
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.ModelBuilder;
 
 namespace Credit_Hours_System.Api
 {
@@ -17,6 +19,11 @@ namespace Credit_Hours_System.Api
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // OData model builder
+            var odataBuilder = new ODataConventionModelBuilder();
+            odataBuilder.EntityType<CHS.DAL.Entites.Log>().HasKey(l => l.Id);
+            odataBuilder.EntitySet<CHS.DAL.Entites.Log>("Logs");
 
             // Configure Serilog (Console Only)
             Log.Logger = new LoggerConfiguration()
@@ -31,7 +38,13 @@ namespace Credit_Hours_System.Api
 
                 builder.Host.UseSerilog();
 
-                builder.Services.AddControllers();
+                // Add services to the container FOR ODATA
+                builder.Services.AddControllers()
+                 .AddOData(options =>
+                 {
+                     options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(100)
+                            .AddRouteComponents("odata", odataBuilder.GetEdmModel());
+                 });
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen();
 
@@ -48,6 +61,7 @@ namespace Credit_Hours_System.Api
                 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
                 builder.Services.AddIdentityServices(builder.Configuration);
                 builder.Services.AddScoped<ITokenService, TokenService>();
+                builder.Services.AddScoped<ILogsRepository, LogsRepository>();
 
                 var app = builder.Build();
 
