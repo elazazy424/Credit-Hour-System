@@ -96,14 +96,12 @@ F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\ne
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.MvcApplicationPartsAssemblyInfo.cs
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.MvcApplicationPartsAssemblyInfo.cache
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.sourcelink.json
-F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.dll
-F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\refint\CreditHoursSystem.Api.dll
-F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.pdb
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\web.config
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\appsettings.Development.json
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\appsettings.json
-F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.exe
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.deps.json
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.runtimeconfig.json
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.exe
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\CreditHoursSystem.Api.pdb
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Azure.Core.dll
@@ -113,6 +111,7 @@ F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\ne
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OData.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -133,7 +132,11 @@ F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\ne
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.OData.Core.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.OData.Edm.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.OData.ModelBuilder.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.Spatial.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
@@ -185,5 +188,8 @@ F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\ne
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\staticwebassets.pack.json
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\scopedcss\bundle\CreditHoursSystem.Api.styles.css
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHo.771412D1.Up2Date
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\refint\CreditHoursSystem.Api.dll
+F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.pdb
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\CreditHoursSystem.Api.genruntimeconfig.cache
 F:\Graduation_Project\Credit Hour System VS\Credit Hours System.Api\obj\Debug\net7.0\ref\CreditHoursSystem.Api.dll

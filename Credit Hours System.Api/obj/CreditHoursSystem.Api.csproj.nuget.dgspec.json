@@ -204,6 +204,10 @@
               "target": "Package",
               "version": "[7.0.15, )"
             },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.3.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.13, )"

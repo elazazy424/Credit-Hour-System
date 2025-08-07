@@ -2,13 +2,15 @@ using CHS.BLL.Interfaces;
 using CHS.BLL.Repositories;
 using CHS.BLL.Services;
 using CHS.DAL;
-using CHS.DAL.Entites;
 using CHS.DAL.Identity;
 using Credit_Hours_System.Api.Extenstions;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
-using Log = Serilog.Log;
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.ModelBuilder;
+using CHS.BLL;
+
 
 namespace Credit_Hours_System.Api
 {
@@ -18,8 +20,14 @@ namespace Credit_Hours_System.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
+            // OData model builder
+            var odataBuilder = new ODataConventionModelBuilder();
+            odataBuilder.EntitySet<LogDto>("Logs");
+
+
             // Configure Serilog (Console Only)
-            Log.Logger = new LoggerConfiguration()
+            Serilog.Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
             .WriteTo.Console()
             .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
@@ -27,11 +35,21 @@ namespace Credit_Hours_System.Api
 
             try
             {
-                Log.Information("Starting Credit Hours System API");
+                Serilog.Log.Information("Starting Credit Hours System API");
 
                 builder.Host.UseSerilog();
 
-                builder.Services.AddControllers();
+
+                // Add services to the container FOR ODATA
+                builder.Services.AddControllers()
+                 .AddOData(options =>
+                 {
+                     options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(100)
+                            .AddRouteComponents("odata", odataBuilder.GetEdmModel());
+                 });
+
+
+
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen();
 
@@ -48,6 +66,7 @@ namespace Credit_Hours_System.Api
                 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
                 builder.Services.AddIdentityServices(builder.Configuration);
                 builder.Services.AddScoped<ITokenService, TokenService>();
+                builder.Services.AddScoped<ILogsRepository, LogsRepository>();
 
                 var app = builder.Build();
 
@@ -101,17 +120,20 @@ namespace Credit_Hours_System.Api
 
                 app.MapControllers();
 
-                Log.Information("Credit Hours System API started successfully");
+                Serilog.Log.Information("Credit Hours System API started successfully");
                 app.Run();
+
+
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "Application terminated unexpectedly");
+                Serilog.Log.Fatal(ex, "Application terminated unexpectedly");
             }
             finally
             {
-                Log.CloseAndFlush();
+                Serilog.Log.CloseAndFlush();
             }
         }
     }
+
 }
